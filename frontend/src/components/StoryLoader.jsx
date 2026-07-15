@@ -22,7 +22,7 @@ function StoryLoader(){
         try{
             
             
-            const response = await axios.get(`${import.meta.env.VITE_BACKEND_URL}/${API_BASE_URL}/stories/${storyId}/complete`)
+            const response = await axios.get(`${import.meta.env.VITE_BACKEND_URL}${API_BASE_URL}/stories/${storyId}/complete`)
             
             setStory(response.data)
             
