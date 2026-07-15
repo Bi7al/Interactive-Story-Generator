@@ -17,7 +17,7 @@ class StoryGenerator:
     def _get_llm(self):
 
         llm = ChatGoogleGenerativeAI(
-            model="gemini-3.5-flash",
+            model="gemini-3.1-flash-lite",
             api_key=settings.API_KEY
         )
         return llm
