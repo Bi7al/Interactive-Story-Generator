@@ -1,7 +1,7 @@
 import './App.css'
 import { BrowserRouter as Router, Routes,Route } from 'react-router-dom'
-import StoryLoader from './components/storyLoader'
-import StoryGenerator from './components/StoryGenerator'
+import StoryLoader from './components/storyLoader.jsx'
+import StoryGenerator from './components/StoryGenerator.jsx'
 
 function App(){
     return(

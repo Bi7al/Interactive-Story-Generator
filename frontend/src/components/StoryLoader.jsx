@@ -1,9 +1,9 @@
 import { useState, useEffect } from "react";
 import { useParams,useNavigate } from "react-router-dom";
 import axios from "axios";
-import LoadingStatus from "./loadingStatus";
-import StoryGame from "./storyGame";
-import { API_BASE_URL } from "../../util";
+import LoadingStatus from "./loadingStatus.jsx";
+import StoryGame from "./storyGame.jsx";
+import { API_BASE_URL } from "../../util.jsx";
 
 function StoryLoader(){
     const {id} = useParams()
