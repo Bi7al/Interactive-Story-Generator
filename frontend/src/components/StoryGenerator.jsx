@@ -40,7 +40,7 @@ function StoryGenerator(){
 
     async function pollJobStatus(jobId){
         try {
-            const response = await axios.get(`${API_BASE_URL}/jobs/${jobId}`)
+            const response = await axios.get(`${import.meta.env.BACKEND_URL}/${API_BASE_URL}/jobs/${jobId}`)
             const {status,story_id,error:jobError} = response.data
             setJobStatus(status)
             if(status == "completed" && story_id){
