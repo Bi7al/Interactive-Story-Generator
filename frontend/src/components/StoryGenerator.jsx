@@ -25,7 +25,7 @@ function StoryGenerator(){
         setError(null)
         setTheme(theme)
         try {
-            const response = await axios.post(`${API_BASE_URL}/stories/create`,{theme})
+            const response = await axios.post(`${import.meta.env.BACKEND_URL}/${API_BASE_URL}/stories/create`,{theme})
             const {job_id,status}= response.data
             setJobId(job_id)
             setJobStatus(status)
